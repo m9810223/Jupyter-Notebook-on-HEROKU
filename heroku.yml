@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: ./minimal-notebook.Dockerfile
+run:
+  web: ./start.sh

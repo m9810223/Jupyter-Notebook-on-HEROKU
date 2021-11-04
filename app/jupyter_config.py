@@ -17,8 +17,8 @@ c.NotebookApp.open_browser = False
 
 # python -c "from notebook.auth import passwd; print(passwd())"
 # 'argon2:$argon2id$v=19$m=10240,t=10,p=8$Hyq3DEuPEbJaWxPffUidbg$uurU+IcZqS/Bey79gk138Q'
-# c.NotebookApp.password = passwd(os.environ.get('JNPASSWD', '0000'))
-c.NotebookApp.password = ''
+c.NotebookApp.password = passwd(os.environ.get('JNPASSWD', '0000'))
+# c.NotebookApp.password = '123'
 c.NotebookApp.token = ''
 
 
